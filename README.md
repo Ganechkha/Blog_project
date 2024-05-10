@@ -1,5 +1,6 @@
 # Blog_project
-This is my first django project. it is a site where we can see some articles with categories.
+This is my first django project, after week of learning.
+It is a site where we can see some articles with categories.
 
 ## How to start?
 
