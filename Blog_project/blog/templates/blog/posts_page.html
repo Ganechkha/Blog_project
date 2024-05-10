@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Posts</title>
+  {% load static %}
+
+  <link rel="stylesheet" href="{% static 'blog/css/navbar.css' %}">
+</head>
+<body style="background-color: #CCCCCC;">
+  {% include 'includes/navbar.html' %}
+  <h1>All posts in blog</h1>
+  <br>
+  <ul>
+    {% for post in posts %}
+    <li><h3><a href="{% url 'blog-posts' post_title=post %}">{{ post|title }}</a></h3></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

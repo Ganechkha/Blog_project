@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ post_title|title }}</title>
+  {% load static %}
+
+  <link rel="stylesheet" href="{% static 'blog/css/navbar.css' %}">
+  <link rel="stylesheet" href="{% static 'blog/css/post_page.css' %}">
+</head>
+<body style="background-color: #CCCCCC;">
+  {% include 'includes/navbar.html' %}
+  <div class="container">
+    <h1>{{ post_title|title }}</h1>
+    <p>{{ post_content }}</p>
+  </div>
+  </body>
+</html>
